@@ -5,7 +5,7 @@ using Pathfinding;
 
 public class Mover : MonoBehaviour
 {
-    [SerializeField] Transform target;
+    [SerializeField] LayerMask layerMask;
 
     RichAI richAI;
 
@@ -16,6 +16,18 @@ public class Mover : MonoBehaviour
 
     private void Update()
     {
-        richAI.destination = target.position;
+        if (Input.GetMouseButtonDown(0))
+        {
+            MoveToCursor();
+        }
+    }
+
+    private void MoveToCursor()
+    {
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out RaycastHit hit, float.MaxValue, layerMask))
+            {
+                richAI.destination = hit.point;
+            }
     }
 }
