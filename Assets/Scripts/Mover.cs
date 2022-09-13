@@ -6,20 +6,25 @@ using Pathfinding;
 public class Mover : MonoBehaviour
 {
     [SerializeField] LayerMask layerMask;
+    [SerializeField] GameObject playerModel;
 
     RichAI richAI;
+    Animator animator;
 
     private void Awake()
     {
         richAI = GetComponent<RichAI>();
+        animator = playerModel.GetComponent<Animator>();
     }
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
             MoveToCursor();
         }
+
+        UpdateAnimation();
     }
 
     private void MoveToCursor()
@@ -29,5 +34,11 @@ public class Mover : MonoBehaviour
             {
                 richAI.destination = hit.point;
             }
+    }
+
+    private void UpdateAnimation()
+    {
+        Vector3 localVelocity = transform.InverseTransformDirection(richAI.velocity);
+        animator.SetFloat("forwardSpeed", localVelocity.z);
     }
 }
