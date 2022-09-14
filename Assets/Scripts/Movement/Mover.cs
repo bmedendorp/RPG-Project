@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
+using RPG.Combat;
 
 namespace RPG.Movement
 {
@@ -9,11 +10,13 @@ namespace RPG.Movement
     {
         RichAI richAI;
         Animator animator;
+        Fighter fighter;
 
         private void Awake()
         {
             richAI = GetComponent<RichAI>();
             animator = GetComponent<Animator>();
+            fighter = GetComponent<Fighter>();
         }
 
         private void Update()
@@ -21,9 +24,21 @@ namespace RPG.Movement
             UpdateAnimation();
         }
 
-        public void MoveToPoint(Vector3 destination)
+        public void StartMoveAction(Vector3 destination)
+        {
+            fighter.Cancel();
+            MoveTo(destination);
+        }
+
+        public void MoveTo(Vector3 destination)
         {
             richAI.destination = destination;
+            richAI.isStopped = false;
+        }
+
+        public void Stop()
+        {
+            richAI.isStopped = true;
         }
 
         private void UpdateAnimation()
