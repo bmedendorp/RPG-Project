@@ -2,21 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
-using RPG.Combat;
+using RPG.Core;
 
 namespace RPG.Movement
 {
-    public class Mover : MonoBehaviour
+    public class Mover : MonoBehaviour, IAction
     {
         RichAI richAI;
         Animator animator;
-        Fighter fighter;
+        ActionScheduler actionScheduler;
 
         private void Awake()
         {
             richAI = GetComponent<RichAI>();
             animator = GetComponent<Animator>();
-            fighter = GetComponent<Fighter>();
+            actionScheduler = GetComponent<ActionScheduler>();
         }
 
         private void Update()
@@ -26,7 +26,7 @@ namespace RPG.Movement
 
         public void StartMoveAction(Vector3 destination)
         {
-            fighter.Cancel();
+            actionScheduler.StartAction(this);
             MoveTo(destination);
         }
 
@@ -36,7 +36,7 @@ namespace RPG.Movement
             richAI.isStopped = false;
         }
 
-        public void Stop()
+        public void Cancel()
         {
             richAI.isStopped = true;
         }

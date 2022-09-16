@@ -860,7 +860,7 @@ MonoBehaviour:
   manualDebugFloorRoof: 0
   showSearchTree: 0
   unwalkableNodeDebugSize: 0.3
-  logPathResults: 1
+  logPathResults: 4
   maxNearestNodeDistance: 100
   scanOnStartup: 1
   fullGetNearestSearch: 0
@@ -1232,25 +1232,6 @@ MonoBehaviour:
   cutsAddedGeom: 1
   updateRotationDistance: 10
   useRotationAndScale: 1
---- !u!1 &1109708502 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7971131759091423786, guid: c718d7adba583324280bc47d3142407e,
-    type: 3}
-  m_PrefabInstance: {fileID: 7971131759317718741}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1109708503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1109708502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc12c505fe3b5cf419f19c35de74f5a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponRange: 2
 --- !u!1001 &1134484693
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2388,6 +2369,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7971131759091424212, guid: c718d7adba583324280bc47d3142407e,
+        type: 3}
+      propertyPath: slowdownTime
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 7971131759091424214, guid: c718d7adba583324280bc47d3142407e,
         type: 3}
       propertyPath: m_RootOrder
@@ -2443,7 +2429,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 864570377818229633, guid: c718d7adba583324280bc47d3142407e, type: 3}
+    m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: c718d7adba583324280bc47d3142407e, type: 3}
