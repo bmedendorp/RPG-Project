@@ -11,16 +11,20 @@ namespace RPG.Movement
         RichAI richAI;
         Animator animator;
         ActionScheduler actionScheduler;
+        Health health;
 
         private void Awake()
         {
             richAI = GetComponent<RichAI>();
             animator = GetComponent<Animator>();
             actionScheduler = GetComponent<ActionScheduler>();
+            health = GetComponent<Health>();
         }
 
         private void Update()
         {
+            richAI.enabled = !health.isDead;
+            
             UpdateAnimation();
         }
 
