@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 3440
     height: 1357
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Scene
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 57
+  controlID: 102
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 130
+  controlID: 138
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -444,12 +444,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders:
-    - Assets/Asset Packs/PolygonDungeonMap
-    - Assets/Asset Packs/PolygonDungeonRealms
-    - Assets/Asset Packs/PolygonFantasyKingdom
-    - Assets/Asset Packs/PolygonFantasyRivals
-    - Assets/Asset Packs/PolygonParticleFX
+    m_Folders: []
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 0
@@ -463,7 +458,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 8c970000
     m_LastClickedID: 38796
-    m_ExpandedIDs: 000000005002000080a1000082a1000084a1000086a1000088a100008aa100008ca100008ea1000090a1000092a1000094a1000096a1000098a100009aa100009ca100009ea10000a0a10000a2a10000a4a10000a6a10000a8a10000aaa10000aca10000aea10000b0a10000b2a10000b4a10000b6a10000b8a10000baa10000bca10000bea10000c0a10000
+    m_ExpandedIDs: 0000000050020000666b0000686b00006a6b00006c6b00006e6b0000706b0000726b0000746b0000766b0000786b00007a6b00007c6b00007e6b0000806b0000826b0000846b0000866b0000886b00008a6b00008c6b00008e6b0000906b0000926b0000946b0000966b0000986b00009a6b00009c6b00009e6b0000a06b0000a26b0000a46b0000a66b0000a86b0000aa6b0000ac6b0000ae6b0000b06b0000b26b0000b46b0000b66b0000b86b0000ba6b0000bc6b0000be6b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -488,24 +483,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 0}
+    scrollPos: {x: 0, y: 268}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff0000000050020000388300001285000080a1000084a1000086a1000088a100008aa100008ca100008ea1000092a1000094a1000096a1000098a100009aa100009ca100009ea10000a0a10000a2a10000a4a10000a6a10000a8a10000aaa10000aca10000b2a10000b4a10000b6a10000baa10000bea10000c0a1000024a2000068a2000002a400006e510100f8640100226b0100a0710100b84406001e470600
+    m_ExpandedIDs: ffffffff0000000050020000686b00006a6b00006c6b00006e6b0000726b0000746b0000766b0000786b00007a6b00007c6b00007e6b0000806b0000826b0000846b0000866b0000886b00008a6b00008c6b00008e6b0000906b0000926b0000946b0000966b0000986b00009a6b00009c6b00009e6b0000a06b0000a26b0000a46b0000a66b0000a86b0000aa6b0000ac6b0000ae6b0000b06b0000b26b0000b46b0000b66b0000b86b0000be6b00002e6c0000326c00004c6c0000787000000871000026420100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Smoke_01
-      m_OriginalName: Smoke_01
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 425176
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 7}
     m_SearchString: 
@@ -621,9 +616,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 8efbe3ff16f8e3ffccf9e3ff4ef6e3ff
-      m_LastClickedID: -1837490
-      m_ExpandedIDs: 700ee4ffd225e5ff0426e5ff6826e5ffb426e5ff7c31e5ff2ef5e5fff47ce6ff88bce6ff7ac2e6ffb0c7e6ff04c8e6ff96c8e6ff7ec9e6ffd6dde6ff34dee6ff7ee6e6ff343ee7ff923ee7ffc23ee7ffd240e7ffde40e7ffe014e9ffa040e9fff247e9ff0249e9ff4062edff58ddffff0adeffffe68c0000ea8c0000
+      m_SelectedIDs: 886a0000
+      m_LastClickedID: 27272
+      m_ExpandedIDs: 36fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -906,9 +901,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: 0}
+    m_Target: {x: 264.32297, y: -514.3392, z: -1086.9728}
     speed: 2
-    m_Value: {x: -0.000001060943, y: -0.00000069281236, z: -0.00000084435504}
+    m_Value: {x: 264.32297, y: -514.3392, z: -1086.9728}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -946,28 +941,28 @@ MonoBehaviour:
       m_Fade:
         m_Target: 0
         speed: 2
-        m_Value: 0
+        m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
-      m_Size: {x: 0, y: 0}
+      m_Size: {x: 1, y: 1}
     m_ShowGrid: 1
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.08663218, y: -0.86056, z: 0.15537271, w: 0.4777695}
+    m_Target: {x: -0.022261437, y: -0.9724101, z: 0.20910798, w: -0.10388672}
     speed: 2
-    m_Value: {x: 0.08637859, y: -0.861072, z: 0.1554657, w: 0.47636548}
+    m_Value: {x: -0.022410385, y: -0.97180593, z: 0.2105037, w: -0.103822336}
   m_Size:
-    m_Target: 10
+    m_Target: 647.8147
     speed: 2
-    m_Value: 10.000001
+    m_Value: 647.8147
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1
-    m_SpeedNormalized: 0.5
+    m_Speed: 2
+    m_SpeedNormalized: 1
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -978,7 +973,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LastSceneViewRotation: {x: 0.021342497, y: 0.96900916, z: -0.2297804, w: 0.09091}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
